@@ -17,11 +17,16 @@ h1,h2,h3,h4,h5,p
 
 /** TOP NAV **/
 
+.nav {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
 .topnav {
   background-color: rgba(0,0,0,.67);
-  width: 100%;
 
-  position: absolute;
 
   box-sizing: border-box;
 
@@ -47,7 +52,7 @@ h1,h2,h3,h4,h5,p
   border-radius: 5px;
 }
 
-.topnav .navlinks
+.topnav > .navlinks
 {
   flex:4;
   padding: 0;
@@ -59,15 +64,18 @@ h1,h2,h3,h4,h5,p
   flex-wrap: wrap;
 }
 
-.topnav .navlinks li
+.topnav > .navlinks > li
 {
+  align-content: center;
   white-space: nowrap;
-  /*flex: 1 1 30%;*/
   justify-content: center;
   padding: 1rem;
+
+  display: flex;
+  align-content: center;
 }
 
-.topnav .navlink
+.navlinks > li .navlink
 {
   color: #be1a3b;
   font-family: Helvetica, sans-serif;
@@ -78,40 +86,101 @@ h1,h2,h3,h4,h5,p
   transition: color .5s;
 }
 
-.topnav .navlink:hover
+.navlinks > li .navlink:hover
 {
   color: white;
 }
 
-.spacecraft
+.navlinks > li .social-links
 {
-  /*
+  display: none;
+}
+
+.topnav2
+{
   display: flex;
-  flex-direction: column;*/
+  flex-direction: row-reverse;
 }
-
-
-.nav2
-{
-
-}
-
 
 .social-links
 {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li
+{
+  margin: 0 .25rem;
+}
+
+.social-links li a i
+{
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #717171;
+  background-color: white;
+  padding: .5rem;
+  border-radius: 60px;
+  transition: all .5s;
+}
+
+.social-links li a i:hover
+{
+  color: white;
+  background-color: #717171;
+}
+
+.topnav2 > .social-links
+{
   background-color: rgba(0,0,0,.67);
-  position: relative;
-  top:90px;
+  padding: .5rem;
+}
+
+.social-margin-left
+{
+  flex-basis:60%;
+  flex-shrink: 4;
+  /*border: red 1px solid;*/
+}
+
+.social-margin-right
+{
+  flex-basis: 15%;
+  /*border: blue 1px solid;*/
+  flex-shrink: 5;
 }
 
 @media (max-width:1040px) {
-  .topnav {
+  .topnav2 {
+    display: none;
+  }
+
+  .navlinks > li .social-links
+  {
+    display: flex;
+  }
+
+  .nav {
     background-color: black;
     position:static;
   }
 }
 
 @media (max-width:750px) {
+/*
+  .topnav2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navlinks > li.social-links, .social-margin-left, .social-margin-right
+  {
+    display: none;
+  }*/
 
   .topnav
   {

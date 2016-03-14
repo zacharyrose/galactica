@@ -1,0 +1,332 @@
+html
+{
+  font-size: 16px;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,p
+{
+  padding: 0;
+  margin: 0;
+}
+
+/** TOP NAV **/
+
+.topnav {
+  background-color: rgba(0,0,0,.67);
+  width: 100%;
+
+  position: absolute;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.topnav .logo {
+  position: relative;
+  top:1rem;
+
+  padding-left: .5rem;
+
+  flex:3;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topnav .logo img
+{
+  border-radius: 5px;
+}
+
+.topnav .navlinks
+{
+  flex:4;
+  padding: 0;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.topnav .navlinks li
+{
+  white-space: nowrap;
+  /*flex: 1 1 30%;*/
+  justify-content: center;
+  padding: 1rem;
+}
+
+.topnav .navlink
+{
+  color: #be1a3b;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+  transition: color .5s;
+}
+
+.topnav .navlink:hover
+{
+  color: white;
+}
+
+.spacecraft
+{
+  /*
+  display: flex;
+  flex-direction: column;*/
+}
+
+
+.nav2
+{
+
+}
+
+
+.social-links
+{
+  background-color: rgba(0,0,0,.67);
+  position: relative;
+  top:90px;
+}
+
+@media (max-width:1040px) {
+  .topnav {
+    background-color: black;
+    position:static;
+  }
+}
+
+@media (max-width:750px) {
+
+  .topnav
+  {
+    flex-direction: column;
+  }
+
+  .topnav .logo {
+    justify-content: center;
+    position: static;
+    padding-top: .5rem;
+  }
+
+  .topnav .navlinks
+  {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .topnav .navlinks li
+  {
+    padding: .5rem;
+    text-align: center;
+  }
+
+}
+
+/***HERO***/
+
+.hero {
+background: url('../images/hero.jpg') no-repeat top center;
+/*
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+*/
+background-size: cover;
+display:flex;
+flex-direction: column;
+justify-content: flex-end;
+height: 527px;
+}
+
+.hero .container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero .container h1 {
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: 70px;
+  color: white;
+  margin-bottom: 2.25rem;
+}
+
+.hero .container .readmorelink
+{
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Helvitica, sans-serif;
+  color: white;
+  background-color: #a50f2d;
+  font-size:16px;
+  padding: 16px 32px;
+  transition: background-color .5s;
+}
+
+.hero .container .readmorelink:hover
+{
+  background-color: #be1a3b;
+}
+
+
+
+/*******Video********/
+
+.video
+{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.video > *
+{
+  align-self: center;
+}
+
+.videoImage img
+{
+  width: 28rem;
+}
+
+.videoText
+{
+  flex-basis: 35%;
+  padding-left:2rem;
+  font-family: 'Lucida Grande', sans-serif;
+}
+
+.videoText h1
+{
+  font-size: 27px;
+  margin: 0;
+}
+
+.videoText p
+{
+  font-size: 15px;
+  margin: .5rem 0 0 0;
+}
+
+@media (max-width:1050px)
+{
+  .video
+  {
+    flex-direction: column;
+  }
+
+  .video > *
+  {
+    text-align: center;
+  }
+
+  .videoText
+  {
+    padding: 2rem;
+  }
+}
+
+@media (max-width:500px)
+{
+  .videoImage img
+  {
+    width: 90%;
+  }
+}
+
+/* Hero 2 */
+.hero2
+{
+  background: url('../images/hero2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+/* Bottom */
+.bottom
+{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom > *
+{
+  flex: 0 1 16rem;
+}
+
+.news
+{
+  margin-top: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Grande', sans-serif;
+
+  border-left: 1px solid #6d6c6c;
+}
+
+.newsfeatured
+{
+  border: none;
+}
+
+.newsimage
+{
+  margin-bottom: 1rem;
+}
+
+.newsimage img
+{
+  width: 100%;
+}
+
+.news > h1
+{
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #a50f2d;
+}
+
+.newsitem .fa {
+  color: #a50f2d;
+  font-size: 150%;
+  margin-right: .5rem;
+}
+
+.newsitem
+{
+  padding: 1rem 0;
+}
+
+.newsitem > h1
+{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #403d3a;
+  margin-bottom: .5rem;
+}
+
+.newsitem > p
+{
+  font-size: .75rem;
+  color: #6d6c6c;
+}

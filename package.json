@@ -1,0 +1,30 @@
+{
+  "name": "galactica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharyrose/galactica.git"
+  },
+  "author": "Zack Rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacharyrose/galactica/issues"
+  },
+  "homepage": "https://github.com/zacharyrose/galactica#readme",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13"
+  }
+}

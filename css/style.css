@@ -91,7 +91,7 @@ h1,h2,h3,h4,h5,p
   color: white;
 }
 
-.navlinks > li .social-links
+.navlinks > li.social-container
 {
   display: none;
 }
@@ -159,9 +159,9 @@ h1,h2,h3,h4,h5,p
     display: none;
   }
 
-  .navlinks > li .social-links
+  .navlinks > li.social-container
   {
-    display: flex;
+    display:block;
   }
 
   .nav {

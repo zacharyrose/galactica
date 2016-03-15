@@ -10,4 +10,4 @@ const Hero = () => (
 </div>
 );
 
-Module.exports = Hero;
+module.exports = Hero;

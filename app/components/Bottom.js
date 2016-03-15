@@ -45,4 +45,4 @@ const Bottom = () => (
 </div>
 );
 
-Module.exports = Bottom;
+module.exports = Bottom;

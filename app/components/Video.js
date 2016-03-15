@@ -25,4 +25,4 @@ const Video = () => (
 </div>
 );
 
-Module.exports = Video;
+module.exports = Video;

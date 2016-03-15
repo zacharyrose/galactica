@@ -11,6 +11,7 @@ class Main extends React.Component{
         <Nav />
         <Hero />
         <Video />
+
         <div className="hero2"></div>
         <Bottom />
       </div>

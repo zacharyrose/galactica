@@ -104,15 +104,12 @@ h1,h2,h3,h4,h5,p
 
 .topnav2 .social-margin-left
 {
-  float: left;
   flex-basis: 64rem;
-  /*border: red 1px solid;*/
   flex-shrink: 5;
 }
 
 .topnav2 .social-links
 {
-  flex-basis: 15rem;
   background-color: rgba(0,0,0,.67);
   padding: .5rem;
   display: inline-flex;
@@ -130,13 +127,6 @@ h1,h2,h3,h4,h5,p
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.social-margin-right
-{
-  flex-basis: 15%;
-  /*border: blue 1px solid;*/
-  flex-shrink: 5;
 }
 
 .social-links li
@@ -165,7 +155,7 @@ h1,h2,h3,h4,h5,p
 
 
 
-@media (max-width:1040px) {
+@media (max-width:1034px) {
   .topnav2 {
     display: none;
   }
